@@ -30,10 +30,10 @@ def main():
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                '/Users/janosmolnar/Documents/Processing/face_circle/credentials.json', SCOPES)
+                'credentials.json', SCOPES)
             creds = flow.run_local_server(port=0)
         # Save the credentials for the next run
-        with open('/Users/janosmolnar/Documents/Processing/face_circle/token.pickle', 'wb') as token:
+        with open('token.pickle', 'wb') as token:
             pickle.dump(creds, token)
 
     event_service = build('calendar', 'v3', credentials=creds)
