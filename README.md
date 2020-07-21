@@ -14,6 +14,9 @@ Renders a video with Circling Faces of colleagues
 - Renders the visuals
 - Outputs frames to `frames/` directory
 
+### Dotpath
+- The random paths of dots are stolen from another sketch of mine: [https://github.com/molnarjani/dotpaths][https://github.com/molnarjani/dotpaths]
+
 ## Scripts
 ### [scripts/generate_video.sh](scripts/generate_video.sh)
 - If called without args it lists next meetings
